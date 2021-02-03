@@ -16,13 +16,21 @@
 .header__navbar-item{
     margin: 0 8px;
     position: relative;
+    min-height: 26px;
 }
-.header__navbar-item, .header__navbar-item-link {
+.header__navbar-item, 
+.header__navbar-item-link {
     display: inline-block;
     font-size: 1.4rem;
     color: var(--white-color);
     text-decoration: none; /* xóa gạch chân */
     font-weight: 300;
+}
+.header__navbar-item, 
+.header__navbar-item-link,
+.header__navbar-icon{
+    display: inline-flex;
+    align-items: center;
 }
 
 .header__navbar-item--strong
@@ -42,12 +50,21 @@
     
 }
 .header__navbar-item:hover,
-.header__navbar-item-link:hover{
+.header__navbar-item-link:hover,
+.header__navbar-icon-link:hover{
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7);
 }
-.header__navbar-icon
+.header__navbar-icon-link
 {
     color: var(--white-color);
     text-decoration: none;
+}
+.header__navbar-icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+.header__navbar-title--no-pointer{
+    cursor: text;
+    color: var(--white-color);
 }
